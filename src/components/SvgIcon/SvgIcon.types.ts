@@ -1,11 +1,12 @@
 export enum IconsEnum {
   loader = 'src/assets/icons/common/loader.svg',
   search = 'src/assets/icons/common/search.svg',
+  hideShow = 'src/assets/icons/common/hideShow.svg',
 }
 
 export type SvgIconProps = {
   src: IconsEnum | string; // use string for icons from backend
-  onClick?: () => void;
+  onClick?: (e: any) => void;
   size?: number;
   color?: colorType;
   rotate?: '90' | '180' | '270';

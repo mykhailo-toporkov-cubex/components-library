@@ -1,7 +1,7 @@
-import { IconsEnum } from '@components/SvgIcon';
+import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { useState } from 'react';
 import { Button } from '.';
-import { ButtonProps } from './Button.types';
+import { ButtonProps, ButtonVariantEnum } from './Button.types';
 
 export default {
   title: 'Components/Button',
@@ -26,12 +26,9 @@ export default {
       options: ['left', 'right'],
     },
   },
-};
+} as ComponentMeta<typeof Button>;
 
-const Template = ({
-  showIcon,
-  ...args
-}: ButtonProps & { showIcon: boolean }) => {
+const Template: ComponentStory<typeof Button> = (args: ButtonProps) => {
   const [counter, setCounter] = useState(0);
   const [isLoading, setIsLoading] = useState(false);
 
@@ -44,11 +41,7 @@ const Template = ({
   };
   return (
     <>
-      <Button
-        onClick={handleClick}
-        loading={isLoading}
-        {...args}
-      />
+      <Button onClick={handleClick} loading={isLoading} {...args} />
     </>
   );
 };
@@ -56,9 +49,8 @@ const Template = ({
 export const button = Template.bind({});
 button.args = {
   text: 'Click me',
-  variant: 'primary',
+  variant: ButtonVariantEnum.primary,
   disabled: false,
   width: 'content',
-  showIcon: true,
   iconPosition: 'left',
 };

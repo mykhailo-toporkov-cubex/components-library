@@ -42,8 +42,8 @@ export const SvgIconComponent: React.FC<SvgIconProps> = ({
     <ReactSVG
       src={src}
       className={svgIconClass}
-      onClick={onClick}
       style={customStyles}
+      onMouseDown={onClick}
     />
   );
 };
