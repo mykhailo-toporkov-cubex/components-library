@@ -1,7 +1,11 @@
-
+import { TextInput } from "@components/TextInput";
 
 function App() {
-  return <div>Hello word</div>;
+  return (
+    <div className="page_wrapper">
+      <TextInput placeholder="test" />
+    </div>
+  );
 }
 
 export default App;
