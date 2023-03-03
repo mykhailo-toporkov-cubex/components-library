@@ -2,7 +2,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { CheckBoxesPage } from './CheckBoxes.page';
 
 export default {
-  title: 'Pages',
+  title: 'Pages/CheckBoxes',
   component: CheckBoxesPage,
 } as ComponentMeta<typeof CheckBoxesPage>;
 
