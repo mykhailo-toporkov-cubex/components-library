@@ -1,10 +1,9 @@
-import { Input, InputVariantEnum } from "@components/Input";
-
+import { TextInput } from "@components/TextInput";
 
 function App() {
   return (
     <div className="page_wrapper">
-      <Input errorText=""  type={InputVariantEnum.password}/>
+      <TextInput placeholder="test" />
     </div>
   );
 }
