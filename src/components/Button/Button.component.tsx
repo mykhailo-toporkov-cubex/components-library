@@ -1,10 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
-
 import { SvgIcon, IconsEnum } from '@components/SvgIcon';
-
 import { ButtonProps } from './Button.types';
-
 import styles from './Button.module.scss';
 
 export const ButtonComponent: React.FC<ButtonProps> = ({
