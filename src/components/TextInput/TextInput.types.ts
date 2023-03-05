@@ -5,7 +5,8 @@ export type TextInputProps = {
   type?: 'text' | 'password';
   direction?: 'rtl' | 'ltr';
   placeholder?: string;
-  errorText?: string;
+  helperText?: string;
+  error?: boolean;
   className?: string;
   style?: React.CSSProperties;
   icon?: React.ReactNode;

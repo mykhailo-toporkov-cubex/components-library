@@ -16,14 +16,16 @@ export const data: TextInputProps[] = [
     type: 'text',
     placeholder: 'Введіть пошту',
     value: 'test@mail.com',
-    errorText: 'Введіть коректну пошту',
+    helperText: 'Введіть коректну пошту',
+    error: true
   },
   {
     type: 'text',
     placeholder: 'Введіть пошту',
     value: 'test@mail.com',
-    errorText: 'Введіть коректну пошту',
+    helperText: 'Введіть коректну пошту',
     direction: 'rtl',
+    error: true
   },
   {
     type: 'password',
@@ -38,13 +40,15 @@ export const data: TextInputProps[] = [
     type: 'password',
     placeholder: 'Введіть пароль',
     value: 'Test_123',
-    errorText: 'Пароль занадто короткий',
+    helperText: 'Пароль занадто короткий',
+    error: true
   },
   {
     type: 'password',
     placeholder: 'Введіть пароль',
     value: 'Test_123',
-    errorText: 'Пароль занадто короткий',
-    direction: 'rtl'
+    helperText: 'Пароль занадто короткий',
+    direction: 'rtl',
+    error: true
   },
 ];

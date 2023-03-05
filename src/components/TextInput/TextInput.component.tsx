@@ -10,9 +10,10 @@ export const TextInputComponent: React.FC<TextInputProps> = ({
   value,
   type = 'text',
   placeholder,
-  errorText,
+  helperText,
   direction = 'ltr',
   style,
+  error = false,
   className,
   icon,
   ref,
@@ -27,7 +28,8 @@ export const TextInputComponent: React.FC<TextInputProps> = ({
     {
       [styles[`input_focus`]]: focus,
       [styles[`input_active`]]: valueRef.current || focus || value,
-      [styles[`input_error`]]: errorText,
+      [styles[`input_helperText`]]: helperText,
+      [styles[`input_error`]]: error,
       [styles[`input_icon`]]: type === 'password',
       [styles[`input_diretion_${direction}`]]: direction,
     },
@@ -82,9 +84,9 @@ export const TextInputComponent: React.FC<TextInputProps> = ({
           <Text variant={TextVariantsEnum.Body_L}>{placeholder}</Text>
         </label>
       )}
-      {errorText && (
-        <label className={styles.errorText}>
-          <Text variant={TextVariantsEnum.Caption}>{placeholder}</Text>
+      {helperText && (
+        <label className={styles.helperText}>
+          <Text variant={TextVariantsEnum.Caption}>{helperText}</Text>
         </label>
       )}
     </div>
