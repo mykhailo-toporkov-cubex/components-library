@@ -24,7 +24,8 @@ export const SelectInputComponent: React.FC<SelectInputProps> = ({
   className,
   style,
   selectStyles,
-  direction,
+  direction = 'ltr',
+  size = 'default_L',
   onChange,
 }) => {
   const containerRef = useRef<HTMLDivElement | null>(null);
@@ -35,7 +36,8 @@ export const SelectInputComponent: React.FC<SelectInputProps> = ({
     {
       [styles[`container_error`]]: error,
       [styles[`container_focus`]]: focus,
-      [styles[`input_diretion_${direction}`]]: direction,
+      [styles[`container_size_${size}`]]: size,
+      [styles[`container_diretion_${direction}`]]: direction,
     },
     className
   );
