@@ -1,3 +1,4 @@
+import { IconsEnum, SvgIcon } from '@components/SvgIcon';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { SelectInput, SelectInputProps } from '.';
 
@@ -21,5 +22,5 @@ export const selectInput = Template.bind({});
 selectInput.args = {
   options,
   helperText: 'Select your value',
-  error: false
+  error: false,
 };

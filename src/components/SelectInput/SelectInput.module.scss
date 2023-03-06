@@ -23,10 +23,20 @@
   }
 
   &_error {
-    border: 2px solid var(--red);
+    border-color: var(--error);
 
     & .helperText {
-      color: var(--red);
+      color: var(--error);
+    }
+  }
+
+  &_diretion {
+    &_rtl {
+      direction: rtl;
+    }
+
+    &_ltr {
+      direction: ltr;
     }
   }
 }
@@ -73,5 +83,9 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
+  }
+
+  [class$='-indicatorContainer'] {
+    padding: 0 19px;
   }
 }

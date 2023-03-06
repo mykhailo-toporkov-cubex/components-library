@@ -1,8 +1,9 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import classNames from 'classnames';
 import styles from './TextInput.module.scss';
 import { TextInputProps } from './TextInput.types';
 import { Text, TextVariantsEnum } from '@components/Text';
+import useOnClickOutside from '../../hooks/useOnClickOutside';
 
 export const TextInputComponent: React.FC<TextInputProps> = ({
   id,
@@ -41,33 +42,13 @@ export const TextInputComponent: React.FC<TextInputProps> = ({
     onChange && onChange(event);
   };
 
-  const handleClickInside = () => setFocus(true);
-
-  const handleClickOutside = () => setFocus(false);
-
-  useEffect(() => {
-    const listener = (event: Event) => {
-      const el = containerRef?.current;
-      if (!el || el.contains((event?.target as Node) || null)) {
-        return;
-      }
-      handleClickOutside();
-    };
-
-    document.addEventListener('mousedown', listener);
-    document.addEventListener('touchstart', listener);
-
-    return () => {
-      document.removeEventListener('mousedown', listener);
-      document.removeEventListener('touchstart', listener);
-    };
-  }, [containerRef, handleClickOutside]);
+  useOnClickOutside(containerRef, () => setFocus(false))
 
   return (
     <div
       className={InputClass}
       style={style}
-      onClick={handleClickInside}
+      onClick={() => setFocus(true)}
       ref={containerRef}
     >
       <input
