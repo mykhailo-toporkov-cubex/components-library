@@ -17,3 +17,9 @@ export type SelectInputProps = {
   selectStyles?: StylesConfig;
   onChange?: (e: any) => void;
 }
+
+export type IndicatorProps = {
+  iconOpen: React.ReactNode
+  iconClosed: React.ReactNode
+  error: boolean
+}

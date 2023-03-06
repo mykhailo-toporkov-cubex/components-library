@@ -1,3 +1,4 @@
+import { DateInputProps } from '@components/DateInput';
 import { SelectInputProps } from '@components/SelectInput';
 import { TextInputProps } from '@components/TextInput';
 

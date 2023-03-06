@@ -14,6 +14,7 @@
     "classnames": "^2.3.2",
     "normalize.css": "^8.0.1",
     "react": "^18.2.0",
+    "react-datepicker": "^4.10.0",
     "react-dom": "^18.2.0",
     "react-select": "^5.7.0",
     "react-svg": "^16.1.4"
@@ -29,7 +30,9 @@
     "@storybook/testing-library": "^0.0.13",
     "@types/node": "^18.14.2",
     "@types/react": "^18.0.27",
+    "@types/react-datepicker": "^4.10.0",
     "@types/react-dom": "^18.0.10",
+    "@types/react-select": "^5.0.1",
     "@vitejs/plugin-react": "^3.1.0",
     "babel-loader": "^8.3.0",
     "sass": "^1.58.3",

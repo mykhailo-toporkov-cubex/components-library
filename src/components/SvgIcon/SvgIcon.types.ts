@@ -4,7 +4,8 @@ export enum IconsEnum {
   hideShow = 'src/assets/icons/common/hideShow.svg',
   checkMark = 'src/assets/icons/common/checkMark.svg',
   menuClosed = 'src/assets/icons/common/menuClosed.svg',
-  menuOpen = 'src/assets/icons/common/menuOpen.svg'
+  menuOpen = 'src/assets/icons/common/menuOpen.svg',
+  calendar = 'src/assets/icons/common/calendar.svg'
 }
 
 export type SvgIconProps = {
