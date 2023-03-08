@@ -1,5 +1,5 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import { Text, TextProps, TextVariantsEnum } from '.';
+import { Text, TextProps } from '.';
 
 export default {
   title: 'Components/Text',

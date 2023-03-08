@@ -1,5 +1,3 @@
-import { IconsEnum } from "@components/SvgIcon";
-
 export enum CheckBoxVariantEnum {
   round = 'round',
   square = 'square',

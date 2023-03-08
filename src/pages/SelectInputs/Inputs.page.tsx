@@ -46,7 +46,7 @@ export const InputsPage = () => {
           <SelectInput key={e.id} {...e} />
         ))}
         {dataDate.map((e) => (
-          <DateInput {...e} />
+          <DateInput {...e} key={e.id}/>
         ))}
       </section>
     </div>

@@ -13,7 +13,7 @@ export type SvgIconProps = {
   onClick?: (e: any) => void;
   size?: number;
   color?: colorType;
-  rotate?: '90' | '180' | '270';
+  rotate?: '0' | '90' | '180' | '270';
   className?: string;
   style?: React.CSSProperties;
   defaultStroke?: boolean;

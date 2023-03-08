@@ -6,6 +6,6 @@ export default {
   component: InputsPage,
 } as ComponentMeta<typeof InputsPage>;
 
-const Template: ComponentStory<typeof InputsPage> = (args) => <InputsPage />;
+const Template: ComponentStory<typeof InputsPage> = () => <InputsPage />;
 
 export const TextInputs = Template.bind({});
