@@ -70,6 +70,7 @@ export const ToastNotificationComponent: React.FC<ToastNotificationProps> = ({
               src={dIcon(variant)}
               color={dIconColor(variant)}
               size={34}
+              role='alerticon'
             />
           </div>
         )}
@@ -93,6 +94,7 @@ export const ToastNotificationComponent: React.FC<ToastNotificationProps> = ({
             color="ultra-light-gray"
             onClick={closeButtonHandler}
             size={30}
+            role="closebutton"
           />
         )}
       </section>

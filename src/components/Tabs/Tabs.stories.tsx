@@ -28,5 +28,5 @@ const Template: ComponentStory<typeof Tabs> = (args: TabsProps) => (
 export const tabs = Template.bind({});
 
 tabs.args = {
-  tabsList: list
+  tabsList: list,
 }

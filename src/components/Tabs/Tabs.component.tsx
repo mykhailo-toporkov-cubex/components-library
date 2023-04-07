@@ -5,13 +5,13 @@ import classNames from 'classnames';
 
 export const TabsComponent: React.FC<TabsProps> = ({
   tabsList,
-  defaultTab = tabsList[0].name,
+  defaultTab = tabsList[0],
   tabClassName,
   tabpanelClassName,
   tabStyle,
   tabpanelStyle,
 }) => {
-  const [current, setCurremt] = useState(defaultTab);
+  const [current, setCurremt] = useState<string>(defaultTab.name);
 
   const tabClass = classNames(styles.tabs_container, tabClassName);
 
